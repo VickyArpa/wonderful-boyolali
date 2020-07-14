@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+nav h2 {
+    font-size: 20px;
+}
+
+nav {
+    color: white;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+}
+
+
+/* .position-fix {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1080;
+} */
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 37%;
+    font-weight: bold;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    font-weight: 520;
+    color: #1abc9c;
+}
+
+.humberger-menu {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-evenly;
+    background-color: #1abc9c;
+    padding: 11px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.humberger-menu input {
+    position: absolute;
+    width: 40px;
+    height: 38px;
+    top: -1px;
+    left: -1px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+.humberger-menu span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+header {
+    position: relative;
+    margin-top: -40px;
+    width: 100%;
+    height: 750px;
+    background-color: #1abc9c;
+    z-index: -9999;
+    display: flex;
+}
+
+.container-header {
+    margin: 120px auto;
+    padding: 50px;
+}
+
+header img {
+    position: relative;
+    max-width: 300px;
+    max-height: 300px;
+    right: -50px;
+}
+
+.container-header h1 {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+/* ARTIKEL UTAMA*/
+
+.container-halaman-utama {
+    display: flex;
+    margin-top: -19px;
+    height: auto;
+}
+
+.judul-daftar-artikel {
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+    color: #2c3e50;
+    letter-spacing: 2px;
+}
+
+.artikel-utama {
+    margin: 50px auto;
+}
+
+.card {
+    border-radius: 6px;
+    position: relative;
+    width: 400px;
+    border: 1px solid #bbb;
+    background-color: white;
+    margin: 12px 12px;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.foto-wisata {
+    width: 100%;
+    height: 390px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* ASIDE atau TENTANG SAYA */
+
+.container-halaman-aside {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    height: 500px;
+    margin-top: -20px;
+    background-color: #1abc9c;
+}
+
+.tentang-saya-body {
+    position: relative;
+    width: 1000px;
+    flex-direction: column;
+    margin: auto;
+    color: white;
+}
+
+.tentang-saya-body span {
+    background-color: #2c3e50;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.tentang-saya-judul {
+    font-size: 40px;
+    color: #2c3e50;
+}
+
+hr {
+    color: #2c3e50;
+}
+
+.foto-profile {
+    position: relative;
+    height: 350px;
+    margin: auto;
+    left: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, .3);
+}
+
+/* GALLERY WISATA */
+
+.gallery-wisata {
+    height: 400px;
+    margin-top: -20px;
+    background-color: white;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    height: 50px;
+    background-color: #2c3e50;
+}
+
+footer h3 {
+    font-weight: 500;
+    margin: auto;
+    color: white;
+}
+
+/* RESPONSIVE*/
+
+@media screen and (max-width: 1423px) {
+
+    .container-halaman-aside {
+        height: 800px;
+        flex-direction: column;
+    }
+
+    .tentang-saya-judul {
+        text-align: center;
+    }
+
+    .tentang-saya-body {
+
+        width: 700px;
+        text-align: center;
+    }
+
+
+
+    @media screen and (max-width: 900px) {
+        .card {
+            width: 350px;
+        }
+    }
+
+    /* Ukuran Tablet*/
+
+    @media screen and (max-width: 839px) {
+
+        .tentang-saya-body {
+            width: 500px;
+        }
+
+        .card {
+            width: 540px;
+        }
+
+        .container-halaman-utama {
+            margin-top: 710px;
+        }
+
+        header img {
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+        .container-header h1 {
+            font-size: 35px;
+        }
+
+
+        .humberger-menu {
+            display: flex;
+            left: 80px;
+        }
+
+        header {
+            position: absolute;
+            z-index: -99;
+
+        }
+
+        nav {
+
+            z-index: 9;
+        }
+
+        nav ul {
+            background-color: #354453;
+            position: absolute;
+            top: 44px;
+            padding: 20px;
+            width: 100%;
+            justify-content: space-evenly;
+            transform: translateY(-250%);
+            transition: all 0.5s;
+            z-index: -9;
+        }
+
+
+
+        nav ul.slide {
+            transform: translateY(0);
+        }
+
+
+    }
+
+
+
+
+
+
+
+    /* Ukuran Mobile*/
+
+    @media screen and (max-width: 576px) {
+
+        .tentang-saya-body {
+            max-width: 350px;
+        }
+
+        .card {
+            width: 470px;
+        }
+
+        header img {
+            max-width: 220px;
+            max-height: 220px;
+        }
+
+        .container-header h1 {
+            font-size: 30px;
+        }
+
+        .humberger-menu {
+
+            left: 45px;
+        }
+
+        nav ul {
+            background-color: #354453;
+            width: 45%;
+            position: absolute;
+            top: 44px;
+            padding: 20px;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+}
